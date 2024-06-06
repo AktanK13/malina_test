@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:malina/core/colors/app_colors.dart';
 import 'package:malina/core/consts/app_icons.dart';
-import 'package:malina/core/routes/routes_constants.dart';
 import 'package:malina/presentation/cart/page/food_cart_page.dart';
 import 'package:popover/popover.dart';
 
@@ -52,8 +51,11 @@ class MenuItems extends StatelessWidget {
             child: IconButton(
               icon: const Icon(AppIcons.food_logo),
               onPressed: () {
-                Navigator.of(context).pushReplacement(MaterialPageRoute(
-                    builder: (context) => const FoodCartPage()));
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => const FoodCartPage(),
+                  ),
+                );
               },
             ),
           ),
@@ -70,8 +72,11 @@ class MenuItems extends StatelessWidget {
             child: IconButton(
               icon: const Icon(AppIcons.cosmetic_logo),
               onPressed: () {
-                Navigator.of(context)
-                    .pushNamed(AppRouteConstants.CART_COSMETIC);
+                Navigator.of(context).pushReplacement(
+                  MaterialPageRoute(
+                    builder: (context) => const FoodCartPage(),
+                  ),
+                );
               },
             ),
           ),
