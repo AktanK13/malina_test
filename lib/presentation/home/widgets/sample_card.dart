@@ -29,7 +29,7 @@ class SampleCard extends StatelessWidget {
             ? null
             : DecorationImage(
                 image: AssetImage(image),
-                fit: BoxFit.cover,
+                fit: BoxFit.fitHeight,
               ),
         color: color,
       ),
