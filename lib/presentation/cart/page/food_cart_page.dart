@@ -48,17 +48,19 @@ class FoodCartPage extends StatelessWidget {
       body: const SingleChildScrollView(
         child: Column(
           children: [
-            Wrap(children: [
-              CartCard(
-                isFood: true,
-                cotegory: 'Bellagio Coffee',
-                image: AppImages.pizza,
-                productName: 'Том ям',
-                price: '250 C',
-                description: 'Пицца с соусом том ям 230 гр',
-                count: '1',
-              ),
-            ])
+            Wrap(
+              children: [
+                CartCard(
+                  isFood: true,
+                  cotegory: 'Bellagio Coffee',
+                  image: AppImages.pizza,
+                  productName: 'Том ям',
+                  price: '250 C',
+                  description: 'Пицца с соусом том ям 230 гр',
+                  count: '1',
+                ),
+              ],
+            )
           ],
         ),
       ),
